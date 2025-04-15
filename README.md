@@ -25,6 +25,7 @@ Things you may want to cover:
 
 
 
-*PRD*
-Good Night Api https://docs.google.com/document/d/1lAScOHghlSRXzyJTPjoY-ydaEHOFDZaeDADFY62QVwI
+*link*
+Document Good Night Api : https://docs.google.com/document/d/1lAScOHghlSRXzyJTPjoY-ydaEHOFDZaeDADFY62QVwI
+Project tracker : https://trello.com/b/n73vn50f/goodnight-api
 
