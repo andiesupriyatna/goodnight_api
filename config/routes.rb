@@ -17,7 +17,7 @@ Rails.application.routes.draw do
       post 'clock_out', on: :collection
     end
 
-    resources :follow, only: [] do
+    resources :follows, only: [] do
       post 'follow', on: :collection
       post 'unfollow', on: :collection
     end
