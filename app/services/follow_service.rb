@@ -19,8 +19,17 @@ class FollowService
         return { error: follow.errors.full_messages }, :unprocessable_entity
       end
     end
-
-    def unfollow_user()
-        
+  
+    def unfollow_user(user:, followed_id:)
+      user_to_unfollow = User.find(followed_id)
+      follow = FollowerUser.where(follower: user, followed: user_to_unfollow).first
+  
+      if follow
+        follow.destroy
+        return { message: "Unfollowed successfully" }, :ok
+      else
+        return { error: "Not following this user" }, :unprocessable_entity
+      end
+    end
     end
 end

@@ -8,7 +8,9 @@ class FollowsController < ApplicationController
     end
   
     def unfollow
-     
+        follow_service = FollowService.new
+        response_json, status = follow_service.unfollow_user(user: @user, followed_id: params[:followed_id])
+        render json: response_json, status: status
     end
   
     def following
