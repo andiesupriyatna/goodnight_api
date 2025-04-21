@@ -1,0 +1,203 @@
+Started POST "/users/6805056f0fd0c8cf42a54cc5/sleep_history/clock_in" for ::1 at 2025-04-21 20:58:54 +0700
+Processing by SleepHistoryController#clock_in as */*
+  Parameters: {"user_id"=>"6805056f0fd0c8cf42a54cc5"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Content in 0ms (MongoDB: 0.0ms | GC: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (8.0.2) lib/action_controller/metal/request_forgery_protection.rb:314:in `handle_unverified_request'
+actionpack (8.0.2) lib/action_controller/metal/request_forgery_protection.rb:408:in `handle_unverified_request'
+actionpack (8.0.2) lib/action_controller/metal/request_forgery_protection.rb:397:in `verify_authenticity_token'
+activesupport (8.0.2) lib/active_support/callbacks.rb:361:in `block in make_lambda'
+activesupport (8.0.2) lib/active_support/callbacks.rb:178:in `block in call'
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (8.0.2) lib/active_support/callbacks.rb:179:in `call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:559:in `block in invoke_before'
+activesupport (8.0.2) lib/active_support/callbacks.rb:559:in `each'
+activesupport (8.0.2) lib/active_support/callbacks.rb:559:in `invoke_before'
+activesupport (8.0.2) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+activesupport (8.0.2) lib/active_support/callbacks.rb:140:in `run_callbacks'
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:76:in `block in process_action'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (8.0.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:75:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+mongoid (8.1.10) lib/mongoid/railties/controller_runtime.rb:21:in `process_action'
+actionpack (8.0.2) lib/abstract_controller/base.rb:163:in `process'
+actionview (8.0.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (8.0.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (8.0.2) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:908:in `call'
+railties (8.0.2) lib/rails/engine/lazy_route_set.rb:68:in `call'
+rack (3.1.13) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.13) lib/rack/etag.rb:29:in `call'
+rack (3.1.13) lib/rack/conditional_get.rb:43:in `call'
+rack (3.1.13) lib/rack/head.rb:15:in `call'
+actionpack (8.0.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (8.0.2) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/cookies.rb:706:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.2) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.2) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.13) lib/rack/method_override.rb:28:in `call'
+rack (3.1.13) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.13) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.2) lib/rails/engine.rb:535:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 req:6 conn:1:1 sconn:12 | goodnight_api_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68064f4830f3c7ee8f2f9978'), "name"=>"JohnDoe", "updated_at"=>2025-04-21 13:59:36.226827 UTC, "created_at"=>2025-04-21 13:59:36.226827 UTC}], "$db"=>"goodnight_api_development",...
+MONGODB | localhost:27017 req:6 | goodnight_api_development.insert | SUCCEEDED | 0.018s
+MONGODB | localhost:27017 req:7 conn:1:1 sconn:12 | goodnight_api_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68064f4830f3c7ee8f2f9979'), "name"=>"JaneDoe", "updated_at"=>2025-04-21 13:59:36.256154 UTC, "created_at"=>2025-04-21 13:59:36.256154 UTC}], "$db"=>"goodnight_api_development",...
+MONGODB | localhost:27017 req:7 | goodnight_api_development.insert | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 req:8 conn:1:1 sconn:12 | goodnight_api_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68064f4830f3c7ee8f2f997a'), "name"=>"SamSmith", "updated_at"=>2025-04-21 13:59:36.257116 UTC, "created_at"=>2025-04-21 13:59:36.257116 UTC}], "$db"=>"goodnight_api_development"...
+MONGODB | localhost:27017 req:8 | goodnight_api_development.insert | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 req:9 conn:1:1 sconn:12 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{}, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12120 type=uuid data=0x94f8953238dd41a5...>}}
+MONGODB | localhost:27017 req:9 | goodnight_api_development.find | SUCCEEDED | 0.001s
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 req:6 conn:1:1 sconn:15 | goodnight_api_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68064f53b55440bad7a71f6f'), "name"=>"JohnDoe", "updated_at"=>2025-04-21 13:59:47.246241 UTC, "created_at"=>2025-04-21 13:59:47.246241 UTC}], "$db"=>"goodnight_api_development",...
+MONGODB | localhost:27017 req:6 | goodnight_api_development.insert | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:7 conn:1:1 sconn:15 | goodnight_api_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68064f53b55440bad7a71f70'), "name"=>"JaneDoe", "updated_at"=>2025-04-21 13:59:47.254007 UTC, "created_at"=>2025-04-21 13:59:47.254007 UTC}], "$db"=>"goodnight_api_development",...
+MONGODB | localhost:27017 req:7 | goodnight_api_development.insert | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:8 conn:1:1 sconn:15 | goodnight_api_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68064f53b55440bad7a71f71'), "name"=>"SamSmith", "updated_at"=>2025-04-21 13:59:47.255378 UTC, "created_at"=>2025-04-21 13:59:47.255378 UTC}], "$db"=>"goodnight_api_development"...
+MONGODB | localhost:27017 req:8 | goodnight_api_development.insert | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 req:9 conn:1:1 sconn:15 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{}, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12120 type=uuid data=0xfb9a7be0f9164e21...>}}
+MONGODB | localhost:27017 req:9 | goodnight_api_development.find | SUCCEEDED | 0.001s
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 req:6 conn:1:1 sconn:18 | goodnight_api_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6806500807fcac0a54cfff1b'), "name"=>"JohnDoe", "updated_at"=>2025-04-21 14:02:48.840502 UTC, "created_at"=>2025-04-21 14:02:48.840502 UTC}], "$db"=>"goodnight_api_development",...
+MONGODB | localhost:27017 req:6 | goodnight_api_development.insert | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:7 conn:1:1 sconn:18 | goodnight_api_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6806500807fcac0a54cfff1c'), "name"=>"JaneDoe", "updated_at"=>2025-04-21 14:02:48.864039 UTC, "created_at"=>2025-04-21 14:02:48.864039 UTC}], "$db"=>"goodnight_api_development",...
+MONGODB | localhost:27017 req:7 | goodnight_api_development.insert | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 req:8 conn:1:1 sconn:18 | goodnight_api_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6806500807fcac0a54cfff1d'), "name"=>"SamSmith", "updated_at"=>2025-04-21 14:02:48.865017 UTC, "created_at"=>2025-04-21 14:02:48.865017 UTC}], "$db"=>"goodnight_api_development"...
+MONGODB | localhost:27017 req:8 | goodnight_api_development.insert | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:9 conn:1:1 sconn:18 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{}, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12140 type=uuid data=0xc519865d68754e3f...>}}
+MONGODB | localhost:27017 req:9 | goodnight_api_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:10 conn:1:1 sconn:18 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('68064f4830f3c7ee8f2f9978')}, "limit"=>1, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12140 type=uuid data=0xc519865d68754e3f...>}}
+MONGODB | localhost:27017 req:10 | goodnight_api_development.find | SUCCEEDED | 0.001s
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 req:6 conn:1:1 sconn:20 | goodnight_api_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e07'), "name"=>"JohnDoe", "updated_at"=>2025-04-21 14:05:06.399885 UTC, "created_at"=>2025-04-21 14:05:06.399885 UTC}], "$db"=>"goodnight_api_development",...
+MONGODB | localhost:27017 req:6 | goodnight_api_development.insert | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:7 conn:1:1 sconn:20 | goodnight_api_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e08'), "name"=>"JaneDoe", "updated_at"=>2025-04-21 14:05:06.411918 UTC, "created_at"=>2025-04-21 14:05:06.411918 UTC}], "$db"=>"goodnight_api_development",...
+MONGODB | localhost:27017 req:7 | goodnight_api_development.insert | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:8 conn:1:1 sconn:20 | goodnight_api_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e09'), "name"=>"SamSmith", "updated_at"=>2025-04-21 14:05:06.413709 UTC, "created_at"=>2025-04-21 14:05:06.413709 UTC}], "$db"=>"goodnight_api_development"...
+MONGODB | localhost:27017 req:8 | goodnight_api_development.insert | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 req:9 conn:1:1 sconn:20 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{}, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12140 type=uuid data=0x5d2dd3ca70564fd1...>}}
+MONGODB | localhost:27017 req:9 | goodnight_api_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:10 conn:1:1 sconn:20 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('68064f4830f3c7ee8f2f9978')}, "limit"=>1, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12140 type=uuid data=0x5d2dd3ca70564fd1...>}}
+MONGODB | localhost:27017 req:10 | goodnight_api_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:11 conn:1:1 sconn:20 | goodnight_api_development.insert | STARTED | {"insert"=>"sleep_histories", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e0a'), "user_id"=>BSON::ObjectId('68064f4830f3c7ee8f2f9978'), "clock_in"=>2025-03-28 12:58:34 UTC, "clock_out"=>2025-04-17 01:38:21 UTC, "updated...
+MONGODB | localhost:27017 req:11 | goodnight_api_development.insert | SUCCEEDED | 0.007s
+MONGODB | localhost:27017 req:12 conn:1:1 sconn:20 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('68064f4830f3c7ee8f2f9979')}, "limit"=>1, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12140 type=uuid data=0x5d2dd3ca70564fd1...>}}
+MONGODB | localhost:27017 req:12 | goodnight_api_development.find | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 req:13 conn:1:1 sconn:20 | goodnight_api_development.insert | STARTED | {"insert"=>"sleep_histories", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e0b'), "user_id"=>BSON::ObjectId('68064f4830f3c7ee8f2f9979'), "clock_in"=>2025-03-26 14:35:36 UTC, "clock_out"=>2025-04-11 01:03:07 UTC, "updated...
+MONGODB | localhost:27017 req:13 | goodnight_api_development.insert | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:14 conn:1:1 sconn:20 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('68064f4830f3c7ee8f2f997a')}, "limit"=>1, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12140 type=uuid data=0x5d2dd3ca70564fd1...>}}
+MONGODB | localhost:27017 req:14 | goodnight_api_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:15 conn:1:1 sconn:20 | goodnight_api_development.insert | STARTED | {"insert"=>"sleep_histories", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e0c'), "user_id"=>BSON::ObjectId('68064f4830f3c7ee8f2f997a'), "clock_in"=>2025-03-22 11:35:40 UTC, "clock_out"=>2025-04-05 03:11:58 UTC, "updated...
+MONGODB | localhost:27017 req:15 | goodnight_api_development.insert | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:16 conn:1:1 sconn:20 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('68064f53b55440bad7a71f6f')}, "limit"=>1, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12140 type=uuid data=0x5d2dd3ca70564fd1...>}}
+MONGODB | localhost:27017 req:16 | goodnight_api_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:17 conn:1:1 sconn:20 | goodnight_api_development.insert | STARTED | {"insert"=>"sleep_histories", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e0d'), "user_id"=>BSON::ObjectId('68064f53b55440bad7a71f6f'), "clock_in"=>2025-04-13 12:26:21 UTC, "clock_out"=>2025-04-09 02:02:35 UTC, "updated...
+MONGODB | localhost:27017 req:17 | goodnight_api_development.insert | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:18 conn:1:1 sconn:20 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('68064f53b55440bad7a71f70')}, "limit"=>1, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12140 type=uuid data=0x5d2dd3ca70564fd1...>}}
+MONGODB | localhost:27017 req:18 | goodnight_api_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:19 conn:1:1 sconn:20 | goodnight_api_development.insert | STARTED | {"insert"=>"sleep_histories", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e0e'), "user_id"=>BSON::ObjectId('68064f53b55440bad7a71f70'), "clock_in"=>2025-03-30 11:53:52 UTC, "clock_out"=>2025-03-30 23:38:03 UTC, "updated...
+MONGODB | localhost:27017 req:19 | goodnight_api_development.insert | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 req:20 conn:1:1 sconn:20 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('68064f53b55440bad7a71f71')}, "limit"=>1, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12140 type=uuid data=0x5d2dd3ca70564fd1...>}}
+MONGODB | localhost:27017 req:20 | goodnight_api_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:21 conn:1:1 sconn:20 | goodnight_api_development.insert | STARTED | {"insert"=>"sleep_histories", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e0f'), "user_id"=>BSON::ObjectId('68064f53b55440bad7a71f71'), "clock_in"=>2025-04-15 11:18:10 UTC, "clock_out"=>2025-04-19 01:22:43 UTC, "updated...
+MONGODB | localhost:27017 req:21 | goodnight_api_development.insert | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:22 conn:1:1 sconn:20 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('6806500807fcac0a54cfff1b')}, "limit"=>1, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12140 type=uuid data=0x5d2dd3ca70564fd1...>}}
+MONGODB | localhost:27017 req:22 | goodnight_api_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:23 conn:1:1 sconn:20 | goodnight_api_development.insert | STARTED | {"insert"=>"sleep_histories", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e10'), "user_id"=>BSON::ObjectId('6806500807fcac0a54cfff1b'), "clock_in"=>2025-03-27 12:10:14 UTC, "clock_out"=>2025-04-01 03:30:10 UTC, "updated...
+MONGODB | localhost:27017 req:23 | goodnight_api_development.insert | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:24 conn:1:1 sconn:20 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('6806500807fcac0a54cfff1c')}, "limit"=>1, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12140 type=uuid data=0x5d2dd3ca70564fd1...>}}
+MONGODB | localhost:27017 req:24 | goodnight_api_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 req:25 conn:1:1 sconn:20 | goodnight_api_development.insert | STARTED | {"insert"=>"sleep_histories", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e11'), "user_id"=>BSON::ObjectId('6806500807fcac0a54cfff1c'), "clock_in"=>2025-04-16 11:49:36 UTC, "clock_out"=>2025-04-19 01:55:50 UTC, "updated...
+MONGODB | localhost:27017 req:25 | goodnight_api_development.insert | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 req:26 conn:1:1 sconn:20 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('6806500807fcac0a54cfff1d')}, "limit"=>1, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12140 type=uuid data=0x5d2dd3ca70564fd1...>}}
+MONGODB | localhost:27017 req:26 | goodnight_api_development.find | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 req:27 conn:1:1 sconn:20 | goodnight_api_development.insert | STARTED | {"insert"=>"sleep_histories", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e12'), "user_id"=>BSON::ObjectId('6806500807fcac0a54cfff1d'), "clock_in"=>2025-04-04 14:09:12 UTC, "clock_out"=>2025-04-08 03:10:48 UTC, "updated...
+MONGODB | localhost:27017 req:27 | goodnight_api_development.insert | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 req:28 conn:1:1 sconn:20 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e07')}, "limit"=>1, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12140 type=uuid data=0x5d2dd3ca70564fd1...>}}
+MONGODB | localhost:27017 req:28 | goodnight_api_development.find | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 req:29 conn:1:1 sconn:20 | goodnight_api_development.insert | STARTED | {"insert"=>"sleep_histories", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e13'), "user_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e07'), "clock_in"=>2025-04-15 14:21:30 UTC, "clock_out"=>2025-03-31 23:18:38 UTC, "updated...
+MONGODB | localhost:27017 req:29 | goodnight_api_development.insert | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 req:30 conn:1:1 sconn:20 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e08')}, "limit"=>1, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12140 type=uuid data=0x5d2dd3ca70564fd1...>}}
+MONGODB | localhost:27017 req:30 | goodnight_api_development.find | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 req:31 conn:1:1 sconn:20 | goodnight_api_development.insert | STARTED | {"insert"=>"sleep_histories", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e14'), "user_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e08'), "clock_in"=>2025-04-19 13:27:18 UTC, "clock_out"=>2025-04-14 03:09:28 UTC, "updated...
+MONGODB | localhost:27017 req:31 | goodnight_api_development.insert | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 req:32 conn:1:1 sconn:20 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e09')}, "limit"=>1, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x12140 type=uuid data=0x5d2dd3ca70564fd1...>}}
+MONGODB | localhost:27017 req:32 | goodnight_api_development.find | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 req:33 conn:1:1 sconn:20 | goodnight_api_development.insert | STARTED | {"insert"=>"sleep_histories", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e15'), "user_id"=>BSON::ObjectId('68065092f1a0b7b5ec317e09'), "clock_in"=>2025-03-31 10:55:03 UTC, "clock_out"=>2025-04-01 01:42:46 UTC, "updated...
+MONGODB | localhost:27017 req:33 | goodnight_api_development.insert | SUCCEEDED | 0.000s
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 req:6 conn:1:1 sconn:24 | goodnight_api_development.aggregate | STARTED | {"aggregate"=>"users", "pipeline"=>[{"$match"=>{}}, {"$group"=>{"_id"=>1, "n"=>{"$sum"=>1}}}], "cursor"=>{}, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x20780 type=uuid data=0x839a541bbb364910...>}}
+MONGODB | localhost:27017 req:6 | goodnight_api_development.aggregate | SUCCEEDED | 0.007s
+MONGODB | localhost:27017 req:7 conn:1:1 sconn:24 | goodnight_api_development.find | STARTED | {"find"=>"users", "filter"=>{}, "limit"=>1, "skip"=>0, "sort"=>{"_id"=>-1}, "$db"=>"goodnight_api_development", "lsid"=>{"id"=><BSON::Binary:0x20780 type=uuid data=0x839a541bbb364910...>}}
+MONGODB | localhost:27017 req:7 | goodnight_api_development.find | SUCCEEDED | 0.003s
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
