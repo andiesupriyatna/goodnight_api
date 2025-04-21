@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   resources :users, only: [] do
     resources :sleep_histories, only: [:index] do
       post 'clock_in', on: :collection
+      post 'clock_out', on: :collection
     end
   end
 end
