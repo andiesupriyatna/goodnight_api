@@ -1,0 +1,737 @@
+{
+	"info": {
+		"_postman_id": "53628f43-aac8-486c-b1b9-d11f4e1f04d8",
+		"name": "Good_night_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5088404",
+		"_collection_link": "https://chatsquadchoi.postman.co/workspace/f96e7b9c-16f1-4f4e-8459-1523cebd6fb4/collection/5088404-53628f43-aac8-486c-b1b9-d11f4e1f04d8?action=share&source=collection_link&creator=5088404"
+	},
+	"item": [
+		{
+			"name": "ClockIn",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users/:id/sleep_history/clock_in",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						":id",
+						"sleep_history",
+						"clock_in"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "68064f4830f3c7ee8f2f9979"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ClockIn",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/users/:id/sleep_histories/clock_in",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id",
+								"sleep_histories",
+								"clock_in"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6805056f0fd0c8cf42a54cc5"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"c49da01f3b7069d649da260d46ff395b\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "fbf5f5c7-e0b1-4021-bfae-35a72855cc6e"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.146429"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, process_action.action_controller;dur=54.87"
+						},
+						{
+							"key": "Content-Length",
+							"value": "277"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Clocked in successfully\",\n    \"sleep_history\": {\n        \"_id\": \"68050d4064ca3c7f4a3ea727\",\n        \"clock_in\": \"2025-04-20T15:05:36.348Z\",\n        \"clock_out\": null,\n        \"created_at\": \"2025-04-20T15:05:36.349Z\",\n        \"updated_at\": \"2025-04-20T15:05:36.349Z\",\n        \"user_id\": \"6805056f0fd0c8cf42a54cc5\",\n        \"duration\": \"N/A\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "ClockOut",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users/:id/sleep_history/clock_out",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						":id",
+						"sleep_history",
+						"clock_out"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "68064f4830f3c7ee8f2f9979"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ClockOut",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/users/:id/sleep_histories/clock_out",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id",
+								"sleep_histories",
+								"clock_out"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6805056f0fd0c8cf42a54cc5"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"4cf2e8bc87bd104a0998d72ebafd19f5\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "a55957e1-4269-439e-8b2a-7629fb97cf00"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.030339"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, process_action.action_controller;dur=24.03"
+						},
+						{
+							"key": "Content-Length",
+							"value": "306"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Clocked out successfully\",\n    \"sleep_history\": {\n        \"_id\": \"68050d4064ca3c7f4a3ea727\",\n        \"clock_in\": \"2025-04-20T15:05:36.348Z\",\n        \"clock_out\": \"2025-04-20T15:05:45.141Z\",\n        \"created_at\": \"2025-04-20T15:05:36.349Z\",\n        \"updated_at\": \"2025-04-20T15:05:45.141Z\",\n        \"user_id\": \"6805056f0fd0c8cf42a54cc5\",\n        \"duration\": \"8 seconds\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Sleep Histories",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users/:id/sleep_history",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						":id",
+						"sleep_history"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "68064f4830f3c7ee8f2f9979"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Sleep Histories",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/users/:id/sleep_histories",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id",
+								"sleep_histories"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6805056f0fd0c8cf42a54cc5"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"357232de9a054150ac4e8bcb93ce812b\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "d8cc8de1-6ce0-4b3b-a4f7-153707fc4eb7"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.029936"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, process_action.action_controller;dur=23.55"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1210"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"68050d4064ca3c7f4a3ea727\",\n        \"clock_in\": \"2025-04-20T15:05:36.348Z\",\n        \"clock_out\": \"2025-04-20T15:05:45.141Z\",\n        \"created_at\": \"2025-04-20T15:05:36.349Z\",\n        \"updated_at\": \"2025-04-20T15:05:45.141Z\",\n        \"user_id\": \"6805056f0fd0c8cf42a54cc5\",\n        \"duration\": \"8 seconds\",\n        \"user\": {\n            \"_id\": \"6805056f0fd0c8cf42a54cc5\",\n            \"created_at\": \"2025-04-20T14:32:15.556Z\",\n            \"name\": \"JohnDoe\",\n            \"updated_at\": \"2025-04-20T14:32:15.556Z\"\n        }\n    },\n    {\n        \"_id\": \"68050932bf265d8e5368e52e\",\n        \"clock_in\": \"2025-04-20T14:48:18.304Z\",\n        \"clock_out\": \"2025-04-20T14:48:58.905Z\",\n        \"created_at\": \"2025-04-20T14:48:18.305Z\",\n        \"updated_at\": \"2025-04-20T14:48:58.905Z\",\n        \"user_id\": \"6805056f0fd0c8cf42a54cc5\",\n        \"duration\": \"40 seconds\",\n        \"user\": {\n            \"_id\": \"6805056f0fd0c8cf42a54cc5\",\n            \"created_at\": \"2025-04-20T14:32:15.556Z\",\n            \"name\": \"JohnDoe\",\n            \"updated_at\": \"2025-04-20T14:32:15.556Z\"\n        }\n    },\n    {\n        \"_id\": \"680507cf848806a6c8c1bc5f\",\n        \"clock_in\": \"2025-03-24T14:08:56.000Z\",\n        \"clock_out\": \"2025-04-09T04:21:01.000Z\",\n        \"created_at\": \"2025-04-20T14:42:23.480Z\",\n        \"updated_at\": \"2025-04-20T14:42:23.480Z\",\n        \"user_id\": \"6805056f0fd0c8cf42a54cc5\",\n        \"duration\": \"2 weeks 1 days 14 hours 12 minutes 5 seconds\",\n        \"user\": {\n            \"_id\": \"6805056f0fd0c8cf42a54cc5\",\n            \"created_at\": \"2025-04-20T14:32:15.556Z\",\n            \"name\": \"JohnDoe\",\n            \"updated_at\": \"2025-04-20T14:32:15.556Z\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Follow User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"followed_id\": \"68065092f1a0b7b5ec317e07\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users/:id/follows/follow",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						":id",
+						"follows",
+						"follow"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "68064f4830f3c7ee8f2f9979"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Follow User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"followed_id\": \"6805056f0fd0c8cf42a54cc6\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/users/:id/follows/follow",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id",
+								"follows",
+								"follow"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6805056f0fd0c8cf42a54cc5"
+								}
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "x-request-id",
+							"value": "e14c763f-a5fd-4439-8324-598ce137a7a8"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.137187"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.02, process_action.action_controller;dur=30.69"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Already following this user\"\n}"
+				}
+			]
+		},
+		{
+			"name": "List Following",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users/:id/follows/following",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						":id",
+						"follows",
+						"following"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "68064f4830f3c7ee8f2f9979"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Following",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/users/:id/follows/following",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id",
+								"follows",
+								"following"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6805056f0fd0c8cf42a54cc6"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"03f85b235a7fc731593a391c0ada03f8\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "deffecc7-ffd6-4716-878d-80c8bbd5ea0b"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.026950"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, process_action.action_controller;dur=20.15"
+						},
+						{
+							"key": "Content-Length",
+							"value": "16"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"following\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Unfollow User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"followed_id\": \"68065092f1a0b7b5ec317e07\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users/:id/follows/unfollow",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						":id",
+						"follows",
+						"unfollow"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6805056f0fd0c8cf42a54cc5"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Unfollow User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"followed_id\": \"6805056f0fd0c8cf42a54cc6\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/users/:id/follows/unfollow",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id",
+								"follows",
+								"unfollow"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6805056f0fd0c8cf42a54cc5"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"690073c55d42023ef4af92c3645fe900\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "b1506109-c002-4931-8cd0-db8dc4f3115a"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.061283"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, process_action.action_controller;dur=44.06"
+						},
+						{
+							"key": "Content-Length",
+							"value": "37"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Unfollowed successfully\"\n}"
+				}
+			]
+		}
+	]
+}
