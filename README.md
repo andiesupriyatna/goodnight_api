@@ -12,8 +12,8 @@ Things you may want to cover:
   Ruby 3.2.2
   
 * System dependencies
-  Rails 8.0.2
-  MongoDB
+  Rails 8.0.2, 
+  MongoDB, 
   Docker
   
 * Configuration
