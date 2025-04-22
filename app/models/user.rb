@@ -8,4 +8,8 @@ class User
   has_many :followers, class_name: 'FollowerUser'
   has_many :followed_users, class_name: 'User', inverse_of: :followers, foreign_key: :followed_id, class_name: 'Follow'
   
+  validates :name, presence: true
+
+  index({ name: 1 })
+
 end

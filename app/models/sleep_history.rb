@@ -8,6 +8,11 @@ class SleepHistory
 
   belongs_to :user
 
+  validates :clock_in, presence: true
+  validates :user, presence: true
+
+  index({ user_id: 1, clock_out: 1 })
+
   def clock_out!
     update(clock_out: Time.current) unless clock_out.present?
   end
