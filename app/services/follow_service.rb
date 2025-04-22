@@ -31,5 +31,10 @@ class FollowService
         return { error: "Not following this user" }, :unprocessable_entity
       end
     end
+  
+    def following_list(user)
+      followed_users = FollowerUser.where(follower: user).map(&:followed)
+      return { following: followed_users }, :ok
     end
-end
+  end
+  

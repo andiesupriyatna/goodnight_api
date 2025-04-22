@@ -14,7 +14,9 @@ class FollowsController < ApplicationController
     end
   
     def following
-      
+        follow_service = FollowService.new
+        response_json, status = follow_service.following_list(@user)
+        render json: response_json, status: status
     end
   
     private

@@ -20,6 +20,7 @@ Rails.application.routes.draw do
     resources :follows, only: [] do
       post 'follow', on: :collection
       post 'unfollow', on: :collection
+      get 'following', on: :collection
     end
   end
 end
